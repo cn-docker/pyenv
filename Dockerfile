@@ -13,4 +13,5 @@ RUN curl https://pyenv.run | bash && \
     pyenv update
 
 # Install latest version of Python 3
-RUN pyenv install 3
+RUN pyenv install 3 && \
+    pyenv global 3
